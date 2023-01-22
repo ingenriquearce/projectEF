@@ -4,7 +4,9 @@ using projectEF;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddDbContext<TareasContext>(p => p.UseInMemoryDatabase("TareasDB"));
+//builder.Services.AddDbContext<TareasContext>(p => p.UseInMemoryDatabase("TareasDB"));
+builder.Services.AddSqlServer<TareasContext>("Aqui va la cadena de conexion con el usuario y el password");
+//We need to use only one set up of database so that we commented the first one
 
 var app = builder.Build();
 
