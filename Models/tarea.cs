@@ -23,9 +23,4 @@ public class Tarea
     public string Resumen{get;set;}
 }
 
-public enum Prioridad
-{
-    baja,
-    media,
-    alta
-}
+public enum Prioridad {baja,media,alta}
